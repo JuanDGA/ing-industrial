@@ -21,6 +21,19 @@ for piece in info:
 
 
 for apellido, nombre, correo, clase in table:
+    correos = [c.strip() for c in correo.split(";")]
+    clases = [c.strip() for c in clase.split(",")]
+
+    correo_html = "\n".join(
+        f'<p class="rtecenter"><span style="color:#696969;"><span style="font-family:times new roman,times,serif;"><u>{c}</u></span></span></p>'
+        for c in correos
+    )
+
+    clase_html = "\n".join(
+        f'<p><span style="color:#696969;"><span style="font-family:times new roman,times,serif;">{c}</span></span></p>'
+        for c in clases
+    )
+
     tr = f"""
         <tr>
 			<td nowrap="nowrap" style="width: 211px;">
@@ -30,10 +43,10 @@ for apellido, nombre, correo, clase in table:
 			<p class="rtecenter"><span style="color:#696969;"><span style="font-family:times new roman,times,serif;">{nombre}</span></span></p>
 			</td>
 			<td nowrap="nowrap" style="width: 140px;">
-			<p class="rtecenter"><span style="color:#696969;"><span style="font-family:times new roman,times,serif;"><u>{correo}</u></span></span></p>
+			{correo_html}
 			</td>
 			<td nowrap="nowrap">
-			<p><span style="color:#696969;"><span style="font-family:times new roman,times,serif;">{clase}</span></span></p>
+			{clase_html}
 			</td>
 		</tr>
     """
