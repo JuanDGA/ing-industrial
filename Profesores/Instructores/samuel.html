@@ -1,0 +1,80 @@
+<style>
+    .foto-perfil {
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    .info-profesor {
+        border: 1px solid;
+        border-color: rgba(0, 0, 0, 0.918);
+        box-sizing: border-box;
+        width: 280px;
+        height: 400px;
+        border-radius: 1.5%;
+        padding-top: 2px;
+        padding-left: 10px;
+    }
+
+    @media (max-width: 765px) {
+        .tab-responsive {
+            float: left;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            width: 100%;
+            height: auto;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-12" style="text-align: center;">
+            <img src="/sites/default/files/samuelbernal.png" class="foto-perfil" alt="">
+            <div class="container info-profesor"
+                style="background-color: #CDA6FF; color: #ffffff; border-color: #FFFFFF; border-radius: 5% ">
+                <h2>Samuel Bernal</h2>
+                <h3>Instructor</h3>
+                <p class="rtejustify"><strong>Extensión:</strong> 2884<br><strong>Correo: </strong>s.bernaln@uniandes.edu.co</p>
+            </div>
+        </div>
+        <div class="col-md-8 col-sm-12">
+            <h2></h2>
+            <ul class="nav nav-tabs">
+                <li class="active tab-responsive"><a data-toggle="tab" href="#home"
+                        style="background: #CDA6FF; color: #ffffff;"><strong> Perfil </strong></a></li>
+                <li class="tab-responsive" style="display: none;"><a data-toggle="tab" href="#menu1"
+                        style="background: #CDA6FF; color: #ffffff;"><strong> Cursos</strong></a></li>
+                <li class="tab-responsive"><a data-toggle="tab" href="#menu2"
+                        style="background: #CDA6FF; color: #ffffff;"><strong> Investigación</strong></a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h3>Perfil</h3>
+                    <p class="rtejustify">
+                        Soy ingeniero industrial de la Universidad de los Andes con opción en Tecnologías de Información en las Organizaciones (2023). Además, recientemente terminé mi Maestría en Ingeniería Industrial también en la Universidad de los Andes (2025). La maestría la realicé mediante la asistencia graduada en el curso de Sistemas Públicos y apoyo en labores administrativas del departamento de Ingeniería Industrial, mediante el Comité de Mejoramiento Continuo (2024-2025).  He tenido experiencia laboral en el sector cosmético y de materias primas para la industria cosmética como gestor de proyectos, puntualmente en las empresas Laboratorios M&N SAS (2022) y Neyber SAS (2023).
+                    </p>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Cursos</h3>
+                    <p>
+                    <ul class="rtejustify">
+                        <li>IIND-2XXX - Clase 1</li>
+                        <li>IIND-2XXX - Clase 2</li>
+                    </ul>
+                    </p>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <h3>Investigación</h3>
+                    <p class="rtejustify">
+                    <ul class="rtejustify">
+                        Me desempeño en las areas de investigación de ingeniería sistémica organizacional y diseño en ingeniería industrial, en donde siempre he enfocado mis proyectos en el desarrollo de soluciones sistémicas, en forma de políticas públicas con impacto social, tanto a nivel rural, como urbano. Actualmente, estoy vinculado con Ingenieros Sin Fronteras para ofrecer soluciones a problemas complejos en comunidades rurales en Colombia.
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
